@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '@/sites/components/header'
-import { useTranslate } from '../../sites/assets/locale/taro'
+import { useTranslate } from '@/sites/assets/locale/taro'
 import Demo1 from './demos/taro/demo1'
 import Demo2 from './demos/taro/demo2'
 import Demo3 from './demos/taro/demo3'
