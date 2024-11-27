@@ -1,0 +1,199 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+s,
+strong,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: PingFang SC, Microsoft YaHei, Helvetica, Hiragino Sans GB, SimSun,
+    sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ios默认文本框阴影 */
+
+input[type='text'],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* 低版本安卓文本框层级问题 */
+
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+// 清除谷歌浏览器下的 search 叉号
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+a,
+button,
+input {
+  outline: 0 none;
+  border: 0;
+  text-decoration: none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: bottom;
+  -ms-interpolation-mode: bicubic;
+}
+[v-cloak] {
+  display: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+
+body {
+  font-size: 14px;
+}
+
+.h5-span {
+  display: inline;
+}
+
+.demo {
+  box-sizing: border-box;
+  &.web {
+    padding-top: 57px !important;
+  }
+
+  &.no-overflow {
+    overflow: unset;
+  }
+
+  height: 100%;
+  background: #f7f8fa;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0px 17px 10px 17px;
+
+  &.full {
+    padding: 57px 0 0 0;
+
+    .h2 {
+      padding-left: 17px;
+    }
+  }
+
+  &-full {
+    padding: 0 0 0 0;
+
+    .h2 {
+      padding-left: 17px;
+    }
+  }
+
+  &.bg-w {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  .h2,
+  h2,
+  .h5-h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(144, 156, 164, 1);
+    padding: 0 10px;
+    font-weight: normal;
+  }
+
+  > .p {
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 25px 18px;
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+// 隐藏jdhybird的提示页面
+#react-refresh-overlay,
+#webpack-dev-server-client-overlay {
+  display: none;
+}
