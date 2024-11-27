@@ -59,7 +59,6 @@ const Index = () => {
             <View className='index-components-sublist'>
               {nav.packages.map((com) => {
                 if(com.show && com.taro) {
-                  a.current  = a.current + 1
                   return <View
                   key={com.name}
                   className='index-components-sublist-item'
@@ -69,7 +68,7 @@ const Index = () => {
                     key={com.name}
                     onClick={() => gotoNext(com.name, nav.enName)}
                   >
-                    {com.name}{a.current}
+                    {com.name}
                   </View>
                 </View>
                 }

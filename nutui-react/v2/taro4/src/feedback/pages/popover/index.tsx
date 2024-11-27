@@ -10,6 +10,8 @@ import Demo4 from './demos/taro/demo4'
 import Demo41 from './demos/taro/demo4-1'
 import Demo5 from './demos/taro/demo5'
 import Demo6 from './demos/taro/demo6'
+import Demo7 from './demos/taro/demo7'
+import { Table } from '@nutui/nutui-react-taro'
 
 const PopoverDemo = () => {
   const [translated] = useTranslate({
@@ -22,6 +24,7 @@ const PopoverDemo = () => {
       title4: '自定义目标元素',
       content: '自定义内容',
       contentColor: '自定义颜色',
+      table: '与 Table 结合使用'
     },
     'en-US': {
       title: 'Basic Usage',
@@ -32,6 +35,7 @@ const PopoverDemo = () => {
       title4: 'Custom Target Element',
       content: 'Custom Content',
       contentColor: 'Custom Color',
+      table: 'Used with Table'
     },
     'zh-TW': {
       title: '基礎用法',
@@ -42,6 +46,7 @@ const PopoverDemo = () => {
       title4: '自定義目標元素',
       content: '自定義內容',
       contentColor: '自定義顏色',
+      table: '與 Table 結合使用'
     },
   })
 
@@ -59,6 +64,8 @@ const PopoverDemo = () => {
         <Demo4 />
         <h2>{translated.title6}</h2>
         <Demo41 />
+        <h2>{translated.table}</h2>
+        <Demo7></Demo7>
         <h2>{translated.title4}</h2>
         <Demo5 />
         <h2>{translated.contentColor}</h2>
