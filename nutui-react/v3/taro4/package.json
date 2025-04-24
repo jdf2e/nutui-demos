@@ -38,8 +38,9 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.23.9",
-    "@nutui/icons-react-taro": "3.0.0-beta.3",
-    "@nutui/nutui-react-taro": "3.0.0-beta.11",
+    "@jdtaro/plugin-intl": "^0.0.6",
+    "@nutui/icons-react-taro": "3.0.1",
+    "@nutui/nutui-react-taro": "^3.0.9",
     "@nutui/touch-emulator": "^1.0.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@tarojs/components": "4.0.9",

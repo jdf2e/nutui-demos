@@ -28,9 +28,10 @@ const config = {
   },
   sass: {
     resource: [
-      path.resolve(__dirname, '../styles/variables.scss'),
-      path.resolve(__dirname, '../styles/theme-default.scss'),
+      // path.resolve(__dirname, '../styles/variables.scss'),
+      path.resolve(__dirname, '../styles/custom.scss'),
     ],
+    data: `@import "@nutui/nutui-react-taro/dist/styles/variables.scss";`
   },
   alias: {
     '@/sites': path.resolve(__dirname, '../src/sites'),
